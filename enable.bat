@@ -16,7 +16,7 @@ if "%CD%"=="%SEED_DIRECTORY%" (
 
     )
 
-    echo Copying Files 
+    echo Copying Files...
     copy /y "enable.bat" "%SEED_DIRECTORY%\"
     copy /y "disable.bat" "%SEED_DIRECTORY%\"
     copy /y "script.bat" "%SEED_DIRECTORY%\"
@@ -24,6 +24,9 @@ if "%CD%"=="%SEED_DIRECTORY%" (
     copy /y "config.txt" "%SEED_DIRECTORY%\"
 )
 
+echo.
+
+echo Installing jq
 set JQ_DIRECTORY=%USERPROFILE%\%INSTALL_DIR%\jq
 if not exist %JQ_DIRECTORY% mkdir %JQ_DIRECTORY%
 
@@ -31,12 +34,17 @@ curl -L %JQ_URL% -o %JQ_DIRECTORY%\jq.exe
 
 echo Installed jq to %JQ_DIRECTORY%
 
+echo.
 
+echo Removing old tasks if exists
 schtasks /delete /tn "GOF Seed" /f >nul2>nul
 
+
+echo.
+echo Installing new task
 schtasks /create /xml task.xml /tn "GOF Seed" /IT
 echo Scheduled task created.
 
-
-echo Installation has finished this window will close in 5 seconds...
-timeout /t 5 >nul
+echo.
+echo Installation has finished this window will close in 15 seconds...
+timeout /t 15 >nul
