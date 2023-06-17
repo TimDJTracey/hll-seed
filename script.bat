@@ -36,4 +36,9 @@ if %count% gtr %SEEDED_THRESHOLD% (
 :endloop
 echo.
 
-echo Server is seeded. 
+echo Server is seeded. Killing game...
+
+TASKKILL /IM HLL-Win64-Shipping.exe /F
+
+echo Waiting for HLL to finish closing
+timeout /t 60 >nul 
