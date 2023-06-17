@@ -36,13 +36,16 @@ echo Installed jq to %JQ_DIRECTORY%
 
 echo.
 
-echo Removing old tasks if exists
+echo Legacy: removing old tasks if exists
 schtasks /delete /tn "GOF Seed" /f >nul2>nul
+
+echo Removing old tasks if exists
+schtasks /delete /tn "SYN Seed" /f >nul2>nul
 
 
 echo.
 echo Installing new task
-schtasks /create /xml task.xml /tn "GOF Seed" /IT
+schtasks /create /xml task.xml /tn "SYN Seed" /IT
 echo Scheduled task created.
 
 echo.
