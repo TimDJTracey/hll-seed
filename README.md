@@ -1,7 +1,7 @@
 # Install
 
 
-- Download the latest release from the [releases](https://github.com/Craven73/hll-seed/releases) page.
+- Download the latest release from the [releases](https://github.com/Craven73/hll-seed/releases/latest) page.
 - Extract the zip file
 - Double click on `enable.bat` to run
 - Click the `More info` button on defender pop up
