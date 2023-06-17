@@ -4,7 +4,7 @@ JQ_URL=https://github.com/stedolan/jq/releases/latest/download/jq-win64.exe
 JQ_INSTALL_PATH=%USERPROFILE%\hll-seed\jq
 JQ_PATH=%USERPROFILE%\hll-seed\jq\jq.exe
 
-RCON_URL=https://gof1.garrisof.com/api/public_info
+RCON_URL=https://stats.syn.team/api/public_info
 SEEDED_THRESHOLD=80
-SERVER_URL=steam://connect/192.169.95.98:26662
+SERVER_URL=steam://connect/server-ip.syn.team:26662
 
