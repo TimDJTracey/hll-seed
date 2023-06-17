@@ -5,7 +5,7 @@
 - Extract the zip file
 - Double click on `enable.bat` to run
 - Click the `More info` button on defender pop up
-> Why are you seeing this pop up? Because am not paying microsoft for a certificat to run this script
+> Why are you seeing this pop up? Because am not paying microsoft for a certificate to run this script
   
 ![first](https://github.com/Craven73/hll-seed/assets/50681292/e02530fc-ebca-4e7b-968d-823681db9a2c)
 
