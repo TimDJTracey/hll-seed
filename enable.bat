@@ -22,6 +22,8 @@ if "%CD%"=="%SEED_DIRECTORY%" (
     copy /y "script.bat" "%SEED_DIRECTORY%\"
     copy /y "task.xml" "%SEED_DIRECTORY%\"
     copy /y "config.txt" "%SEED_DIRECTORY%\"
+    copy /y "SpawnSL.exe" "%SEED_DIRECTORY%\"
+   
 )
 
 echo.
